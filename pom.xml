@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.j3270</groupId>
+	<artifactId>modules</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+
+	<name>J3270</name>
+	<description>j3270 Project</description>
+	<url>http://www.j3270.com</url>
+	<inceptionYear>2016</inceptionYear>
+	
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+
+	<issueManagement>
+		<system>Github Issues</system>
+		<url>https://github.com/3270/j3270/issues</url>
+	</issueManagement>
+
+	<organization>
+		<name>j3270</name>
+		<url>http://www.j3270.com</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<name>Daniel Yokomizo</name>
+			<email>dyokomizo@j3270.com</email>
+			<organization>j3270</organization>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>base</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.2</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
